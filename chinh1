@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	float tv, ls, kv;
+	int nam=0;
+	cout<<" Input tien von, lai suat, ki vong: ";
+	cin>>tv>>ls>>kv;
+	while(tv<0||ls<0||kv<0)
+	{
+		cout<<" Onput nhap sai"<<endl;
+		cout<<" Input so tien von, lai suat, ki vong: ";
+		cin>>tv>>ls>>kv;
+	}
+	while(tv<kv)
+	{
+		tv+=(tv*ls)/100.0;
+		nam++;
+	}
+	cout<<" sau "<<nam<<" nam ban nhan duoc so tien ki vong la: "<<kv;
+	return 0;
+}
